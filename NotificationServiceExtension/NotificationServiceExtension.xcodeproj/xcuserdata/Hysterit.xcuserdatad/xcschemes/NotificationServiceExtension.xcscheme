@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0810"
-   version = "1.3">
+   wasCreatedForAppExtension = "YES"
+   version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,10 +15,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3DBCD3181DF0095700791F1F"
+               BuildableName = "NotificationServiceExtension.appex"
+               BlueprintName = "NotificationServiceExtension"
+               ReferencedContainer = "container:NotificationServiceExtension.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "3DF830C91DE4072B005F2657"
                BuildableName = "usernotification.sample.objc.app"
                BlueprintName = "usernotification.sample.objc"
-               ReferencedContainer = "container:usernotification.sample.objc.xcodeproj">
+               ReferencedContainer = "container:NotificationServiceExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DF830C91DE4072B005F2657"
-            BuildableName = "usernotification.sample.objc.app"
-            BlueprintName = "usernotification.sample.objc"
-            ReferencedContainer = "container:usernotification.sample.objc.xcodeproj">
+            BlueprintIdentifier = "3DBCD3181DF0095700791F1F"
+            BuildableName = "NotificationServiceExtension.appex"
+            BlueprintName = "NotificationServiceExtension"
+            ReferencedContainer = "container:NotificationServiceExtension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -43,14 +58,15 @@
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "2">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
@@ -58,7 +74,7 @@
             BlueprintIdentifier = "3DF830C91DE4072B005F2657"
             BuildableName = "usernotification.sample.objc.app"
             BlueprintName = "usernotification.sample.objc"
-            ReferencedContainer = "container:usernotification.sample.objc.xcodeproj">
+            ReferencedContainer = "container:NotificationServiceExtension.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,7 +85,8 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "2">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
@@ -77,7 +94,7 @@
             BlueprintIdentifier = "3DF830C91DE4072B005F2657"
             BuildableName = "usernotification.sample.objc.app"
             BlueprintName = "usernotification.sample.objc"
-            ReferencedContainer = "container:usernotification.sample.objc.xcodeproj">
+            ReferencedContainer = "container:NotificationServiceExtension.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

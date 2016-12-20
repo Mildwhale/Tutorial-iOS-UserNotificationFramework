@@ -235,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3DF830C51DE4072B005F2657 /* Build configuration list for PBXProject "usernotification.sample.objc" */;
+			buildConfigurationList = 3DF830C51DE4072B005F2657 /* Build configuration list for PBXProject "NotificationServiceExtension" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -484,8 +484,9 @@
 				3DBCD3241DF0095700791F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3DF830C51DE4072B005F2657 /* Build configuration list for PBXProject "usernotification.sample.objc" */ = {
+		3DF830C51DE4072B005F2657 /* Build configuration list for PBXProject "NotificationServiceExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DF830DF1DE4072B005F2657 /* Debug */,

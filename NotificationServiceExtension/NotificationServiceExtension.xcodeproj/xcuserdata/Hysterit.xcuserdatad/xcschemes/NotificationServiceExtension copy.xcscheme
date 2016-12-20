@@ -15,24 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DDB13D81DEE787A00B06E07"
-               BuildableName = "NotificationServiceExtension.appex"
-               BlueprintName = "NotificationServiceExtension"
-               ReferencedContainer = "container:usernotification.sample.objc.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DF830C91DE4072B005F2657"
-               BuildableName = "usernotification.sample.objc.app"
-               BlueprintName = "usernotification.sample.objc"
-               ReferencedContainer = "container:usernotification.sample.objc.xcodeproj">
+               BlueprintIdentifier = "3DA2B5801DFA854200B744FE"
+               BuildableName = "NotificationServiceExtension TEST.appex"
+               BlueprintName = "NotificationServiceExtension TEST"
+               ReferencedContainer = "container:NotificationServiceExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DDB13D81DEE787A00B06E07"
-            BuildableName = "NotificationServiceExtension.appex"
-            BlueprintName = "NotificationServiceExtension"
-            ReferencedContainer = "container:usernotification.sample.objc.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -67,16 +44,15 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DF830C91DE4072B005F2657"
-            BuildableName = "usernotification.sample.objc.app"
-            BlueprintName = "usernotification.sample.objc"
-            ReferencedContainer = "container:usernotification.sample.objc.xcodeproj">
+            BlueprintIdentifier = "3DA2B5801DFA854200B744FE"
+            BuildableName = "NotificationServiceExtension TEST.appex"
+            BlueprintName = "NotificationServiceExtension TEST"
+            ReferencedContainer = "container:NotificationServiceExtension.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -87,16 +63,15 @@
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DF830C91DE4072B005F2657"
-            BuildableName = "usernotification.sample.objc.app"
-            BlueprintName = "usernotification.sample.objc"
-            ReferencedContainer = "container:usernotification.sample.objc.xcodeproj">
+            BlueprintIdentifier = "3DA2B5801DFA854200B744FE"
+            BuildableName = "NotificationServiceExtension TEST.appex"
+            BlueprintName = "NotificationServiceExtension TEST"
+            ReferencedContainer = "container:NotificationServiceExtension.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
