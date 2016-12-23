@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2FF1B41E0CDEBF00225D2B /* HIVEExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2FF1B31E0CDEBF00225D2B /* HIVEExtensions.framework */; };
+		3D4565E51E0CE02D00A34D51 /* HIVEExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2FF1B31E0CDEBF00225D2B /* HIVEExtensions.framework */; };
+		3D4565E61E0CE02D00A34D51 /* HIVEExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2FF1B31E0CDEBF00225D2B /* HIVEExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DBCD31D1DF0095700791F1F /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD31C1DF0095700791F1F /* NotificationService.m */; };
 		3DBCD3211DF0095700791F1F /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3DBCD3191DF0095700791F1F /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3DBCD32D1DF10F4600791F1F /* gifsample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD3291DF10F4600791F1F /* gifsample.gif */; };
@@ -34,6 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		3D4565E71E0CE02D00A34D51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D4565E61E0CE02D00A34D51 /* HIVEExtensions.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DCF80D21DE6D1CC004095C4 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D2FF1B31E0CDEBF00225D2B /* HIVEExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HIVEExtensions.framework; sourceTree = "<group>"; };
 		3DBCD3191DF0095700791F1F /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBCD31B1DF0095700791F1F /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		3DBCD31C1DF0095700791F1F /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
@@ -78,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2FF1B41E0CDEBF00225D2B /* HIVEExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4565E51E0CE02D00A34D51 /* HIVEExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +132,7 @@
 		3DCF80E81DE6EBEF004095C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D2FF1B31E0CDEBF00225D2B /* HIVEExtensions.framework */,
 				3DCF80E91DE6EBEF004095C4 /* UserNotifications.framework */,
 				3DCF80EB1DE6EBEF004095C4 /* UserNotificationsUI.framework */,
 			);
@@ -188,6 +206,7 @@
 				3DF830C71DE4072B005F2657 /* Frameworks */,
 				3DF830C81DE4072B005F2657 /* Resources */,
 				3DCF80D21DE6D1CC004095C4 /* Embed App Extensions */,
+				3D4565E71E0CE02D00A34D51 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,6 +345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = MMVTCXSS58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -339,6 +362,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = MMVTCXSS58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -445,6 +472,10 @@
 				CODE_SIGN_ENTITLEMENTS = SampleSource/usernotification.sample.objc.entitlements;
 				DEVELOPMENT_TEAM = MMVTCXSS58;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/SampleSource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -460,6 +491,10 @@
 				CODE_SIGN_ENTITLEMENTS = SampleSource/usernotification.sample.objc.entitlements;
 				DEVELOPMENT_TEAM = MMVTCXSS58;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/SampleSource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
