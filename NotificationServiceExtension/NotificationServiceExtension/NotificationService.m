@@ -20,9 +20,6 @@
 
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler
 {
-    self.contentHandler = contentHandler;
-    self.bestAttemptContent = [request.content mutableCopy];
-    
     [HIVENotificationService didReceiveNotificationRequest:request withContentHandler:contentHandler];
 }
 

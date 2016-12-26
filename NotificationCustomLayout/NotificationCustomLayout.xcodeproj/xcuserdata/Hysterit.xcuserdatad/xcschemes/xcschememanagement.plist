@@ -14,9 +14,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>NotificationServiceExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3D4565EB1E0CF32000A34D51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3D87528A1E090EC400FC0A63</key>
 		<dict>
 			<key>primary</key>
