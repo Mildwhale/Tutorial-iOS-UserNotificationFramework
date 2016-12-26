@@ -8,6 +8,8 @@
 
 #import <UserNotifications/UserNotifications.h>
 
+FOUNDATION_EXPORT NSString * const kHIVENotificationUserInfoAttachmentKey;
+
 @interface HIVENotificationService : NSObject
 
 + (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *))contentHandler;

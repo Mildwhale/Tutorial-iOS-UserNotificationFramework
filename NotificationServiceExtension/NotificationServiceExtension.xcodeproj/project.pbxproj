@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D4565FF1E0D1DBE00A34D51 /* HIVEExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4565FE1E0D1DBE00A34D51 /* HIVEExtensions.framework */; };
-		3D4566001E0D1DBE00A34D51 /* HIVEExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4565FE1E0D1DBE00A34D51 /* HIVEExtensions.framework */; };
+		3DBBB08F1E10EC8B00E7513A /* HIVEExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBBB0811E10EBCD00E7513A /* HIVEExtensions.framework */; };
+		3DBBB0901E10ECA600E7513A /* HIVEExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBBB0811E10EBCD00E7513A /* HIVEExtensions.framework */; };
+		3DBBB0911E10ECA600E7513A /* HIVEExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBBB0811E10EBCD00E7513A /* HIVEExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DBCD31D1DF0095700791F1F /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD31C1DF0095700791F1F /* NotificationService.m */; };
 		3DBCD3211DF0095700791F1F /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3DBCD3191DF0095700791F1F /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3DBCD32D1DF10F4600791F1F /* gifsample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD3291DF10F4600791F1F /* gifsample.gif */; };
@@ -26,6 +27,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3DBBB0801E10EBCD00E7513A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DBBB07C1E10EBCC00E7513A /* HIVEExtensions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D2FF1A01E0CD23D00225D2B;
+			remoteInfo = HIVEExtensions;
+		};
+		3DBBB0861E10EC2200E7513A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DBBB07C1E10EBCC00E7513A /* HIVEExtensions.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2FF19F1E0CD23D00225D2B;
+			remoteInfo = HIVEExtensions;
+		};
+		3DBBB08C1E10EC8600E7513A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DBBB07C1E10EBCC00E7513A /* HIVEExtensions.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2FF19F1E0CD23D00225D2B;
+			remoteInfo = HIVEExtensions;
+		};
+		3DBBB0921E10ECA600E7513A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DBBB07C1E10EBCC00E7513A /* HIVEExtensions.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2FF19F1E0CD23D00225D2B;
+			remoteInfo = HIVEExtensions;
+		};
 		3DBCD31F1DF0095700791F1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3DF830C21DE4072B005F2657 /* Project object */;
@@ -36,12 +65,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3D4565E71E0CE02D00A34D51 /* Embed Frameworks */ = {
+		3DBBB0941E10ECA700E7513A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3DBBB0911E10ECA600E7513A /* HIVEExtensions.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,7 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3D4565FE1E0D1DBE00A34D51 /* HIVEExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HIVEExtensions.framework; sourceTree = "<group>"; };
+		3DBBB07C1E10EBCC00E7513A /* HIVEExtensions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HIVEExtensions.xcodeproj; path = ../HIVEExtensions/HIVEExtensions.xcodeproj; sourceTree = "<group>"; };
 		3DBCD3191DF0095700791F1F /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBCD31B1DF0095700791F1F /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		3DBCD31C1DF0095700791F1F /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
@@ -91,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4566001E0D1DBE00A34D51 /* HIVEExtensions.framework in Frameworks */,
+				3DBBB08F1E10EC8B00E7513A /* HIVEExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +129,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4565FF1E0D1DBE00A34D51 /* HIVEExtensions.framework in Frameworks */,
+				3DBBB0901E10ECA600E7513A /* HIVEExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DBBB07D1E10EBCC00E7513A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DBBB0811E10EBCD00E7513A /* HIVEExtensions.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3DBCD31A1DF0095700791F1F /* NotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +168,6 @@
 		3DCF80E81DE6EBEF004095C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3D4565FE1E0D1DBE00A34D51 /* HIVEExtensions.framework */,
 				3DCF80E91DE6EBEF004095C4 /* UserNotifications.framework */,
 				3DCF80EB1DE6EBEF004095C4 /* UserNotificationsUI.framework */,
 			);
@@ -159,6 +196,7 @@
 		3DF830C11DE4072B005F2657 = {
 			isa = PBXGroup;
 			children = (
+				3DBBB07C1E10EBCC00E7513A /* HIVEExtensions.xcodeproj */,
 				3DD7876E1E08DBEA00AA484B /* SampleSource */,
 				3DBCD3281DF10E5700791F1F /* SampleResources */,
 				3DBCD31A1DF0095700791F1F /* NotificationServiceExtension */,
@@ -190,6 +228,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3DBBB0871E10EC2200E7513A /* PBXTargetDependency */,
 			);
 			name = NotificationServiceExtension;
 			productName = NotificationServiceExtension;
@@ -204,12 +243,14 @@
 				3DF830C71DE4072B005F2657 /* Frameworks */,
 				3DF830C81DE4072B005F2657 /* Resources */,
 				3DCF80D21DE6D1CC004095C4 /* Embed App Extensions */,
-				3D4565E71E0CE02D00A34D51 /* Embed Frameworks */,
+				3DBBB0941E10ECA700E7513A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				3DBCD3201DF0095700791F1F /* PBXTargetDependency */,
+				3DBBB08D1E10EC8600E7513A /* PBXTargetDependency */,
+				3DBBB0931E10ECA600E7513A /* PBXTargetDependency */,
 			);
 			name = NotificationServiceExtensionSample;
 			productName = usernotification.sample.objc;
@@ -256,6 +297,12 @@
 			mainGroup = 3DF830C11DE4072B005F2657;
 			productRefGroup = 3DF830CB1DE4072B005F2657 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3DBBB07D1E10EBCC00E7513A /* Products */;
+					ProjectRef = 3DBBB07C1E10EBCC00E7513A /* HIVEExtensions.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3DF830C91DE4072B005F2657 /* NotificationServiceExtensionSample */,
@@ -263,6 +310,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3DBBB0811E10EBCD00E7513A /* HIVEExtensions.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HIVEExtensions.framework;
+			remoteRef = 3DBBB0801E10EBCD00E7513A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3DBCD3171DF0095700791F1F /* Resources */ = {
@@ -312,6 +369,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3DBBB0871E10EC2200E7513A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HIVEExtensions;
+			targetProxy = 3DBBB0861E10EC2200E7513A /* PBXContainerItemProxy */;
+		};
+		3DBBB08D1E10EC8600E7513A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HIVEExtensions;
+			targetProxy = 3DBBB08C1E10EC8600E7513A /* PBXContainerItemProxy */;
+		};
+		3DBBB0931E10ECA600E7513A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HIVEExtensions;
+			targetProxy = 3DBBB0921E10ECA600E7513A /* PBXContainerItemProxy */;
+		};
 		3DBCD3201DF0095700791F1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3DBCD3181DF0095700791F1F /* NotificationServiceExtension */;

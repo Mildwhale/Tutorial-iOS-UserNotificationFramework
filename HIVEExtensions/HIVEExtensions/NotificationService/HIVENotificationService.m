@@ -8,6 +8,8 @@
 
 #import "HIVENotificationService.h"
 
+NSString * const kHIVENotificationUserInfoAttachmentKey = @"attachment-media";
+
 @interface HIVENotificationService ()
 
 @property (nonatomic, strong) void (^contentHandler)(UNNotificationContent *contentToDeliver);
@@ -44,7 +46,7 @@
     self.bestAttemptContent = [request.content mutableCopy];
     
     NSDictionary *userInfo = request.content.userInfo; // Push Payload의 사용자 정의 데이터.
-    NSURL *mediaURL = [NSURL URLWithString:userInfo[@"attachment-media"]];
+    NSURL *mediaURL = [NSURL URLWithString:userInfo[kHIVENotificationUserInfoAttachmentKey]];
     
     NSLog(@"[%s] Received UserInfo : %@", __PRETTY_FUNCTION__, userInfo);
     
@@ -53,35 +55,28 @@
         if (error || !location) {
             // 다운로드 실패.
             NSLog(@"code : %ld, description : %@", error.code, error.localizedDescription);
-            self.contentHandler(self.bestAttemptContent);
-            return ;
-        }
-        
-        NSString *tmpDirectory = [NSString stringWithFormat:@"file://%@", NSTemporaryDirectory()];
-        NSURL *newFileURL = [NSURL URLWithString:[tmpDirectory stringByAppendingString:mediaURL.lastPathComponent]];
-        
-        if (!newFileURL) {
-            // URL 생성에 실패했을 경우, 파일명을 변경하여 다시 시도한다.
-            newFileURL = [NSURL URLWithString:[tmpDirectory stringByAppendingString:[location.lastPathComponent stringByReplacingOccurrencesOfString:@"tmp" withString:mediaURL.pathExtension]]];
-        }
-        
-        if (!newFileURL) {
-            // 최종적으로 URL이 없을 경우, 미디어를 노출하지 않는다.
-            self.contentHandler(self.bestAttemptContent);
-            return ;
-        }
-        
-        NSError *fileError;
-        
-        if ([[NSFileManager defaultManager] moveItemAtURL:location toURL:newFileURL error:&fileError]) {
-            // 다운로드 완료된 미디어의 URL로, Attachment 객체를 생성한다.
-            UNNotificationAttachment *attachement = [UNNotificationAttachment attachmentWithIdentifier:@"media" URL:newFileURL options:nil error:nil];
-            
-            // Attachment 객체를 NotificationRequest에 추가한다.
-            self.bestAttemptContent.attachments = @[attachement];
         } else {
-            // 미디어 파일 이동 실패.
-            NSLog(@"code : %ld, description : %@", fileError.code, fileError.localizedDescription);
+            NSString *tmpDirectory = [NSString stringWithFormat:@"file://%@", NSTemporaryDirectory()];
+            NSURL *newFileURL = [NSURL URLWithString:[tmpDirectory stringByAppendingString:mediaURL.lastPathComponent]];
+            
+            if (!newFileURL) {
+                // URL 생성에 실패했을 경우, 파일명을 변경하여 다시 시도한다.
+                NSString *timeStamp = [NSString stringWithFormat:@"%lf", [NSDate date].timeIntervalSince1970];
+                newFileURL = [NSURL URLWithString:[tmpDirectory stringByAppendingString:[location.lastPathComponent stringByReplacingOccurrencesOfString:timeStamp withString:mediaURL.pathExtension]]];
+            }
+            
+            NSError *fileMoveError;
+            
+            if ([[NSFileManager defaultManager] moveItemAtURL:location toURL:newFileURL error:&fileMoveError]) {
+                // 다운로드 완료된 미디어의 URL로, Attachment 객체를 생성한다.
+                UNNotificationAttachment *attachement = [UNNotificationAttachment attachmentWithIdentifier:@"hive-media" URL:newFileURL options:nil error:nil];
+                
+                // Attachment 객체를 NotificationRequest에 추가한다.
+                self.bestAttemptContent.attachments = @[attachement];
+            } else {
+                // 미디어 파일 이동 실패.
+                NSLog(@"code : %ld, description : %@", fileMoveError.code, fileMoveError.localizedDescription);
+            }
         }
         
         self.contentHandler(self.bestAttemptContent);
