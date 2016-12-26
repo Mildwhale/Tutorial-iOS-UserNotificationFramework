@@ -196,9 +196,9 @@
 			productReference = 3DBCD3191DF0095700791F1F /* NotificationServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		3DF830C91DE4072B005F2657 /* usernotification.sample.objc */ = {
+		3DF830C91DE4072B005F2657 /* NotificationServiceExtensionSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3DF830E11DE4072B005F2657 /* Build configuration list for PBXNativeTarget "usernotification.sample.objc" */;
+			buildConfigurationList = 3DF830E11DE4072B005F2657 /* Build configuration list for PBXNativeTarget "NotificationServiceExtensionSample" */;
 			buildPhases = (
 				3DF830C61DE4072B005F2657 /* Sources */,
 				3DF830C71DE4072B005F2657 /* Frameworks */,
@@ -211,7 +211,7 @@
 			dependencies = (
 				3DBCD3201DF0095700791F1F /* PBXTargetDependency */,
 			);
-			name = usernotification.sample.objc;
+			name = NotificationServiceExtensionSample;
 			productName = usernotification.sample.objc;
 			productReference = 3DF830CA1DE4072B005F2657 /* NotificationServiceExtensionSample.app */;
 			productType = "com.apple.product-type.application";
@@ -258,7 +258,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3DF830C91DE4072B005F2657 /* usernotification.sample.objc */,
+				3DF830C91DE4072B005F2657 /* NotificationServiceExtensionSample */,
 				3DBCD3181DF0095700791F1F /* NotificationServiceExtension */,
 			);
 		};
@@ -522,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DF830E11DE4072B005F2657 /* Build configuration list for PBXNativeTarget "usernotification.sample.objc" */ = {
+		3DF830E11DE4072B005F2657 /* Build configuration list for PBXNativeTarget "NotificationServiceExtensionSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DF830E21DE4072B005F2657 /* Debug */,

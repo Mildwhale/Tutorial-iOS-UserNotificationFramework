@@ -9,7 +9,7 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>usernotification.sample.objc.xcscheme</key>
+		<key>NotificationServiceExtensionSample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
